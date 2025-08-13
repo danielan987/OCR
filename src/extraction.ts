@@ -12,8 +12,6 @@ export async function extract(pdfBuffer: Buffer) {
     model: 'gpt-5-nano',
     max_output_tokens: 5000,
     instructions: 'You are a fast, cost-aware PDF extraction assistant.',
-    temperature: 0,
-    top_p: 0.1,
     input: [
       {
         type: 'message',
